@@ -33,12 +33,12 @@ http://www.hughsherman.com/webpack-guide.html
 4. Update your package.json to include a command to run jasmine:
 
     package.json
-     ----------------------------------
+     ```
     "scripts": {
       "build": "webpack",
       "test": "jasmine"
       
-      ----------------------------------
+     ```
 
     ### Remember to add a comma between these commands!!! Otherwise your whole thing could break!!!
 
@@ -73,7 +73,7 @@ http://www.hughsherman.com/webpack-guide.html
 
    You also need an .eslintrc file, this just holds rules for ESLint and goes in the top level directory:
    .eslintrc
-   ----------------------------------
+  ```
 
    {
     "parserOptions": {
@@ -92,11 +92,14 @@ http://www.hughsherman.com/webpack-guide.html
     }
 }
 
-----------------------------------
+```
 
    Add this to the package.json file under the "scripts" section, and make sure to add a comma after the previous item in the list:
+   ```
 
    "lint": "eslint src/*.js"
+   
+   ```
 
 6. Congrats! You have good Karma! Now run the config command!
 
@@ -105,7 +108,7 @@ http://www.hughsherman.com/webpack-guide.html
 7. Edit your newly created karma.conf.js file, and replace it with this version:
 
    COPY BELOW
-   ----------------------------------
+   ```
 
 
    // Karma configuration
@@ -193,16 +196,16 @@ http://www.hughsherman.com/webpack-guide.html
    }
 
 
-   ----------------------------------
+  ```
    COPY ABOVE
 
 8. Change your "test" command in package.json to the new Karma command:
-----------------------------------
+```
     "scripts": {
       "build": "webpack",
       "test": "./node_modules/karma/bin/karma start karma.conf.js"
     },
-----------------------------------
+```
 
 # NOTE THAT THIS TEST PATH DOES NOT WORK ON A WINDOWS COMPUTER!!!
 	I had to use this alternate test command instead:
@@ -214,9 +217,9 @@ http://www.hughsherman.com/webpack-guide.html
 
 ### QUICK NOTE! I didn't use ES Lint in any of my stuff because it's a bit of a mystery to me, and keeps breaking my builds. If anyone has a solution, I'd love to look at it!!
 
-----------------------------------
-    Add this:
 
+    Add this:
+```
       {
         test: /\.js$/,
         exclude: [
@@ -252,8 +255,7 @@ http://www.hughsherman.com/webpack-guide.html
         ]
       }
       // maybe some stuff down here
-
---------------------------------
+```
 
 SAMPLE TESTS!!
 
