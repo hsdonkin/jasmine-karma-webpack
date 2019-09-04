@@ -1,0 +1,22 @@
+{
+  "name": "karma",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.18",
+    "css-loader": "^0.28.10",
+    "html-webpack-plugin": "^3.0.6",
+    "style-loader": "^0.20.2",
+    "webpack": "^4.39.3"
+  },
+  "dependencies": {
+    "webpack-cli": "^3.3.7"
+  }
+}
