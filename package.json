@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "test": "jasmine"
   },
   "keywords": [],
   "author": "",
@@ -13,10 +14,13 @@
     "clean-webpack-plugin": "^0.1.18",
     "css-loader": "^0.28.10",
     "html-webpack-plugin": "^3.0.6",
+    "jasmine": "^3.1.0",
+    "jasmine-core": "^2.99.0",
     "style-loader": "^0.20.2",
     "webpack": "^4.39.3"
   },
   "dependencies": {
+    "jquery": "^3.4.1",
     "webpack-cli": "^3.3.7"
   }
 }
