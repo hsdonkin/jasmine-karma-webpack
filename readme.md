@@ -38,8 +38,7 @@ http://www.hughsherman.com/webpack-guide.html
       "build": "webpack",
       "test": "jasmine"
 
-    ### Remember to add a comma between these commands!!! Otherwise
-        your whole thing could break!!!
+    ### Remember to add a comma between these commands!!! Otherwise your whole thing could break!!!
 
 5. Install Karma, which is a separate package that runs the tests
    that you write for Jasmine!
